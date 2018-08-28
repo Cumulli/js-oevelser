@@ -17,7 +17,24 @@
             border: 1px solid silver;
             margin: 7vw;
             transition: all 1s;
+            background-color: lightpink;
         }
+
+        #box1:hover{
+            width: 15vw;
+            height: 15vw;
+            background-color: azure;
+            border-color: black;
+            border: bold;}
+
+        #box3 {
+            width: 8vw;
+            height: 8vw;
+            border-color: palevioletred;
+            border: bold;
+        }
+
+
         /*********************/
     </style>
 
@@ -30,6 +47,17 @@
     <div class="box" id="box4"></div>
 
     <script>
+        const box2 = document.querySelector("#box2");
+        document.querySelector("#box2").style.height= "2rem";
+        document.querySelector("#box2").style.backgroundColor= "yellow";
+
+         const box4 = document.querySelector("#box4");
+        document.querySelector("#box4").style.backgroundColor= "green";
+        document.querySelector("#box4").style.borderColor= "black";
+        document.querySelector("#box4").style.border= "bold";
+        document.querySelector("#box4").style.height= "3rem";
+        document.querySelector("#box4").style.width= "4rem";
+
     </script>
 </body>
 
