@@ -33,7 +33,7 @@
     <button id="html">
         html
     </button>
-    <button id="slet">
+    <button id="flyt">
         flyt
     </button>
     <div id="box"></div>
@@ -42,14 +42,24 @@
     <script>
         const klik = document.querySelector("#klik");
         klik.addEventListener("click", () => {
-        box.textContent = "klik";
+            box.textContent = "klik";
         });
 
-        const slet = document.querySelector ("#slet");
-       slet.addEventListener("click", () => {
-        box.textContent = "";
-       }
-                            )
+        const slet = document.querySelector("#slet");
+        slet.addEventListener("click", () => {
+            box.textContent = "";
+        })
+
+        const html = document.querySelector("#html");
+         html.addEventListener("click", () => {
+           document.querySelector("#box").innerHTML = "<h2>hej</h2> <p>du er sød</p>"
+         })
+
+        const flyt = document.querySelector ("#flyt");
+         flyt.addEventListener("click", ()=>{
+         bax.innerHTML = box.innerHTML;
+         box.innerHTML = "";
+         });
 
     </script>
 </body>
