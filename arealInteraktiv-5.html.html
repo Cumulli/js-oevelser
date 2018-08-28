@@ -8,24 +8,24 @@
 
 <body>
     <script>
+        let length = prompt("må jeg få længden?"),
+            width = prompt("må jeg få bredden?"),
+            besked;
 
-        let length = prompt("må jeg få længden?"), width = prompt("må jeg få bredden?"), besked;
+        if (Number(width) && Number(length) ){
 
-        if(Number(width) && Number (length) ){
+            alert("længde: " +
+                length + " meter\nBredden: ",
+                width + " meter\nArealet: " +
+                length*width + "kvadratmeter");
 
-            alert("længde:" +
-                  length + "meter \n bredden:",
-                  width + "Vmeter \nArealet" +
-                  length*width + "kvadratmeter");
-        }
-
-        else{
+        } else {
             alert("kan ikke regne det ud");
         }
-        if(confirm("vil du starte forfra?")){
+
+        if (confirm("vil du starte forfra?")) {
             location.reload();
         }
-
     </script>
 
 
