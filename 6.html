@@ -9,25 +9,25 @@
 <body>
 
     <script>
-    function areaudregning(l,w){
-        id (number (l) && number (w))}
-
-        else {
-            return "kan ikke regne det ud";
+        function areaudregning(l, w){
+            if (Number(l) && Number(w)){
+                return "areal:" + l * w;
+            } else {
+                return "kan ikke regne det ud";
+            }
         }
 
         function brugerkontakt(){
             let length = prompt("længde?"),
-                width = prompt ("bredde?"),
+                width = prompt("bredde?"),
                 besked = areaudregning(length, width);
-
             alert(besked);
 
-            if(confirm("vil du starte forfra?")){
+            if (confirm("vil du starte forfra?")) {
                 brugerkontakt();
             }
         }
-
+        brugerkontakt();
     </script>
 
 </body>
