@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="dyr">
+        <h1 class="Elefant"></h1>
+
+    </div>
+
+    <script>
+        let dyr = {
+            "navn": "elefant",
+            "type": "pattedyr",
+            "levested": "indien"
+        }
+
+        let tekst = "en " + dyr.navn + " er et" + dyr.type + ", som lever i" + dyr.levested;
+        console.log(tekst);
+
+        document.querySelector(".Elefant").textContent="en " + dyr.navn + " er et " + dyr.type + ", som lever i " + dyr.levested;
+
+    </script>
+
+</body>
+</html>
