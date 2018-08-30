@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="dyr">
+        <strong class="navn"></strong><br>
+        <img src="" alt=""><br>
+        <span class="om"></span>
+
+    </div>
+
+    <script>
+        let dyr = {
+            "navn": "Elefanten",
+            "type": "pattedyr",
+            "levested": "indien",
+            "billede": "bodil.jpg"
+        };
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            console.log("en " + dyr.navn + " er et" + dyr.type + ", som lever i" + dyr.levested);
+
+            document.querySelector(".navn").textContent = dyr.navn + ":";
+
+            document.querySelector(".om").textContent =" er et " + dyr.type + ", som lever i " + dyr.levested;
+            document.querySelector(".dyr img").src=dyr.billede;
+        }
+
+    </script>
+
+</body>
+</html>
