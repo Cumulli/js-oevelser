@@ -9,16 +9,18 @@
 <body>
 
     <div class="dyr">
-        <strong class="navn"></strong>
+        <strong class="navn"></strong><br>
+        <img src="" alt=""><br>
         <span class="om"></span>
 
     </div>
 
     <script>
         let dyr = {
-            "navn": "elefant",
+            "navn": "Elefanten",
             "type": "pattedyr",
-            "levested": "indien"
+            "levested": "indien",
+            "billede": "bodil.jpg"
         };
 
         document.addEventListener("DOMContentLoaded", start);
@@ -28,7 +30,9 @@
 
             document.querySelector(".navn").textContent = dyr.navn + ":";
 
-            document.querySelector(".om").textContent =" er et " + dyr.type + ", som lever i " + dyr.levested;      }
+            document.querySelector(".om").textContent =" er et " + dyr.type + ", som lever i " + dyr.levested;
+            document.querySelector(".dyr img").src=dyr.billede;
+        }
 
     </script>
 
