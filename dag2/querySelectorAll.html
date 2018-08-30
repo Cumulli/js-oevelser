@@ -28,11 +28,21 @@
     <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
 
 
-    <script>
+        <script>
+        document.querySelectorAll("p").forEach(pClass => {
+        pClass.addEventListener("click", ()=> {
+        pClass.classList.add('typo');
+        }
+        )});
 
-        document.querySelectorAll("p").forEach( p =>{
-            p.classList.add("typo");
-        });
+        const slet = document.querySelector("#slet");
+        slet.addEventListener("click", hej);
+
+        function hej(){
+        document.querySelectorAll("p").forEach(pClass => {
+        pClass.classList.remove('typo');
+        }
+        )}
 
     </script>
 </body>
